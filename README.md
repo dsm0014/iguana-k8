@@ -5,6 +5,7 @@ Make sure to have the following CLI tools installed on your machine before getti
 - docker
 - minikube
 - kubectl
+- helm
 
 Once you have these installed, start up your local kubernetes cluster and create a namespace to use for iguana-k8
 ```
@@ -21,5 +22,6 @@ For Example:
 sh localdeploy.sh iguana
 ```
 
-The console should output a tunnel to localhost through which the Spring Boot application can be reached. Give it a try,
-and start interacting with the IguanaAPI from the ``localhost:<PORT>/api/iguana`` endpoint!
+The application will be deployed using the Helm chart included in this project, and the console should output a tunnel 
+to localhost through which the Spring Boot application can be reached. Check out the API docs of the application
+at ``<YOUR_TUNNEL_ADDRESS>/swagger-ui/`` and give it a try!
