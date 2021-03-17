@@ -8,20 +8,20 @@ public class Iguana {
 
 
     @Id
-    private String Id;
+    private String id;
     private String name;
-    private String species;
+    private String binomialName;
 
     private String[] alternateNames;
 
 
 
     public String getId() {
-        return Id;
+        return id;
     }
 
     public void setId(String id) {
-        Id = id;
+        this.id = id;
     }
 
     public String getName() {
@@ -32,12 +32,12 @@ public class Iguana {
         this.name = name;
     }
 
-    public String getSpecies() {
-        return species;
+    public String getBinomialName() {
+        return binomialName;
     }
 
-    public void setSpecies(String species) {
-        this.species = species;
+    public void setBinomialName(String binomialName) {
+        this.binomialName = binomialName;
     }
 
     public String[] getAlternateNames() {
