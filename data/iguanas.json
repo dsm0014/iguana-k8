@@ -1,0 +1,70 @@
+[
+  {
+    "id": "0",
+    "name": "Marine Iguana",
+    "binomialName": "Amblyrhynchus cristatus",
+    "alternateNames": [
+      "Galapagos Marine Iguana",
+      "Sea Iguana",
+      "Saltwater Iguana"
+    ]
+  },
+  {
+    "id": "1",
+    "name": "Fiji Banded Iguana",
+    "binomialName": "Brachylophus bulabula"
+  },
+  {
+    "id": "2",
+    "name": "Fiji Crested Iguana",
+    "binomialName": "Brachylophus vitiensis",
+    "alternateNames": [
+      "Fijan Crested Iguana"
+    ]
+  },
+  {
+    "id": "3",
+    "name": "Gau Iguana",
+    "binomialName": "Brachylophus gau"
+  },
+  {
+    "id": "4",
+    "name": "Galapagos Land Iguana",
+    "binomialName": "Conolophus subcristatus"
+  },
+  {
+    "id": "5",
+    "name": "Galapagos Pink Land Iguana",
+    "binomialName": "Conolophus marthae",
+    "alternateNames": [
+      "Pink Iguana",
+      "Galapagos Rosy Iguana"
+    ]
+  },
+  {
+    "id": "6",
+    "name": "Santa Fe Land Iguana",
+    "binomialName": "Conolophus pallidus",
+    "alternateNames": [
+      "Barrington Land Iguana"
+    ]
+  },
+  {
+  "id": "7",
+  "name": "Northeastern Spiny Tail Iguana",
+  "binomialName": "Ctenosaura acanthura",
+  "alternateNames": [
+    "Veracruz Spiny-Tailed Iguana"
+  ]
+},
+  {
+    "id": "8",
+    "name": "Utila Iguana",
+    "binomialName": "Ctenosaura bakeri",
+    "alternateNames": [
+      "Baker's Spinytail Iguana",
+      "Swamper",
+      "Wishiwilly del Suampo"
+    ]
+  }
+]
