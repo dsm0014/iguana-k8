@@ -1,6 +1,6 @@
 #!/bin/bash
 namespace=$1
-[[ $2 = "upgrade" ]] && is_upgrade=true || is_upgrade=false
+[[ $(helm list -q -n $namespace) = "" ]] && is_upgrade=false || is_upgrade=true
 
 if [ $is_upgrade ]; then
   helm upgrade $namespace kube/simple-spring-mongo -n $namespace
