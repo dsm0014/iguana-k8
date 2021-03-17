@@ -1,0 +1,49 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: spring-{{ .Release.Name }}
+spec:
+  selector:
+    app: spring-{{ .Release.Name }}
+  ports:
+    - port: 80
+      targetPort: 8080
+  type: LoadBalancer
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spring-{{ .Release.Name }}
+  labels:
+    app: spring-{{ .Release.Name }}
+spec:
+  selector:
+    matchLabels:
+      app: spring-{{ .Release.Name }}
+  replicas: {{ .Values.spring.replicas }}
+  template:
+    metadata:
+      labels:
+        app: spring-{{ .Release.Name }}
+    spec:
+      containers:
+        - name: {{ .Release.Name }}-service
+          image: {{ .Values.spring.docker.repository }}/{{ .Values.spring.docker.image }}:{{ .Values.spring.docker.tag }}
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8080
+          env:
+            - name: MONGO_URL
+              value: mongodb://mongo-{{ .Release.Name }}:{{ .Values.mongo.port | default 27017 }}/{{ .Values.mongo.dbname }}
+
+          livenessProbe:
+            httpGet:
+              path: {{ .Values.spring.healthcheckEndpoint }}
+              port: 8080
+              httpHeaders:
+                - name: Content-Type
+                  value: application/json
+            initialDelaySeconds: 10
+            periodSeconds: 5
+
