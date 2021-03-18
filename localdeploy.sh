@@ -1,8 +1,7 @@
 #!/bin/bash
 namespace=$1
-[[ $(helm list -q -n $namespace) = "" ]] && is_upgrade=false || is_upgrade=true
-
-if [ $is_upgrade ]; then
+deployment=$(helm list -q -n $namespace)
+if [ $deployment = $namespace ]; then
   helm upgrade $namespace kube/simple-spring-mongo -n $namespace
 else
   helm install $namespace kube/simple-spring-mongo -n $namespace
