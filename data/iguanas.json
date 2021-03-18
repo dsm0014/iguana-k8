@@ -50,13 +50,13 @@
     ]
   },
   {
-  "id": "7",
-  "name": "Northeastern Spiny Tail Iguana",
-  "binomialName": "Ctenosaura acanthura",
-  "alternateNames": [
-    "Veracruz Spiny-Tailed Iguana"
-  ]
-},
+    "id": "7",
+    "name": "Northeastern Spiny Tail Iguana",
+    "binomialName": "Ctenosaura acanthura",
+    "alternateNames": [
+      "Veracruz Spiny-Tailed Iguana"
+    ]
+  },
   {
     "id": "8",
     "name": "Utila Iguana",
@@ -65,6 +65,221 @@
       "Baker's Spinytail Iguana",
       "Swamper",
       "Wishiwilly del Suampo"
+    ]
+  },
+  {
+    "id": "9",
+    "name": "Balsas Armed Lizard",
+    "binomialName": "Ctenosaura clarki",
+    "alternateNames": [
+      "Balsas Spiny-Tailed Iguana",
+      "Michoacan Dwarf Spiny-Tailed Iguana",
+      "Nopiche"
+    ]
+  },
+  {
+    "id": "10",
+    "name": "Yellowback Spiny-Tailed Iguana",
+    "binomialName": "Ctenosaura flavidorsalis"
+  },
+  {
+    "id": "11",
+    "name": "Baja California Spiny-Tailed Iguana",
+    "binomialName": "Ctenosaura hemilopha",
+    "alternateNames": [
+      "Cape Spinytail Iguana"
+    ]
+  },
+  {
+    "id": "12",
+    "name": "Honduran Spinytailed Iguana",
+    "binomialName": "Ctenosaura melanosterna",
+    "alternateNames": [
+      "Black-Chested Spiny-Tailed Iguana"
+    ]
+  },
+  {
+    "id": "13",
+    "name": "Oaxacan Spiny-Tailed Iguana",
+    "binomialName": "Ctenosaura oaxacana"
+  },
+  {
+    "id": "14",
+    "name": "Roatan Spiny-Tailed Iguana",
+    "binomialName": "Ctenosaura oedirhina",
+    "alternateNames": [
+      "De Queiroz's Spiny-Tailed Iguana"
+    ]
+  },
+  {
+    "id": "15",
+    "name": "Guatemalan Spiny-Tailed Iguana",
+    "binomialName": "Ctenosaura palearis"
+  },
+  {
+    "id": "16",
+    "name": "Mexican Spiny-Tailed Iguana",
+    "binomialName": "Ctenosaura pectinata",
+    "alternateNames": [
+      "Guerreran Spiny-Tailed Iguana",
+      "Mexican Spinytail Iguana"
+    ]
+  },
+  {
+    "id": "17",
+    "name": "Club Tail Iguana",
+    "binomialName": "Ctenosaura quinquecarinata",
+    "alternateNames": [
+      "Five-Keeled Spiny-Tailed Iguana"
+    ]
+  },
+  {
+    "id": "18",
+    "name": "Black Spiny-Tailed Iguana",
+    "binomialName": "Ctenosaura similis",
+    "alternateNames": [
+      "Black Iguana",
+      "Black Ctenosaur"
+    ]
+  },
+  {
+    "id": "19",
+    "name": "Turks and Caicos Rock Iguana",
+    "binomialName": "Cyclura carinata"
+  },
+  {
+    "id": "20",
+    "name": "Jamaican Iguana",
+    "binomialName": "Cyclura collei",
+    "alternateNames": [
+      "Baker's Spinytail Iguana",
+      "Swamper",
+      "Wishiwilly del Suampo"
+    ]
+  },
+  {
+    "id": "21",
+    "name": "Rhinoceros Iguana",
+    "binomialName": "Cyclura cornuta"
+  },
+  {
+    "id": "22",
+    "name": "Northern Bahamian Rock Iguana",
+    "binomialName": "Cyclura cychlura"
+  },
+  {
+    "id": "23",
+    "name": "Blue Iguana",
+    "binomialName": "Cyclura lewisi",
+    "alternateNames": [
+      "Grand Cayman Ground Iguana",
+      "Grand Cayman Blue Iguana",
+      "Grand Cayman Rock Iguana"
+    ]
+  },
+  {
+    "id": "24",
+    "name": "Cuban Rock Iguana",
+    "binomialName": "Cyclura nubila",
+    "alternateNames": [
+      "Cuban Ground Iguana",
+      "Cuban Iguana"
+    ]
+  },
+  {
+    "id": "25",
+    "name": "Anegada Ground Iguana",
+    "binomialName": "Cyclura pinguis",
+    "alternateNames": [
+      "Stout Iguana"
+    ]
+  },
+  {
+    "id": "26",
+    "name": "Ricord's Ground Iguana",
+    "binomialName": "Cyclura ricordii",
+    "alternateNames": [
+      "Ricord's Rock Iguana"
+    ]
+  },
+  {
+    "id": "27",
+    "name": "Bahamian Rock Iguana",
+    "binomialName": "Cyclura rileyi",
+    "alternateNames": [
+      "Salvador Rock Iguana"
+    ]
+  },
+  {
+    "id": "28",
+    "name": "Desert Iguana",
+    "binomialName": "Dipsosaurus dorsalis"
+  },
+  {
+    "id": "29",
+    "name": "Green Iguana",
+    "binomialName": "Iguana iguana",
+    "alternateNames": [
+      "American Iguana",
+      "Common Green Iguana"
+    ]
+  },
+  {
+    "id": "30",
+    "name": "Lesser Antillean Iguana",
+    "binomialName": "Iguana delicatissima",
+    "alternateNames": [
+      "Lesser Antillean Green Iguana",
+      "West Indian Iguana"
+    ]
+  },
+  {
+    "id": "31",
+    "name": "Berthold's Bush Anole",
+    "binomialName": "Polychrus gutturosus",
+    "alternateNames": [
+      "Monkey Tailed Anole",
+      "Forest Iguana"
+    ]
+  },
+  {
+    "id": "32",
+    "name": "Common Chuckwalla",
+    "binomialName": "Sauromalus ater"
+  },
+  {
+    "id": "33",
+    "name": "Peninsular Chuckwalla",
+    "binomialName": "Sauromalus australis"
+  },
+  {
+    "id": "33",
+    "name": "Angel Island Chuckwalla",
+    "binomialName": "Sauromalus hispidus",
+    "alternateNames": [
+      "Spiny Chuckwalla"
+    ]
+  },
+  {
+    "id": "34",
+    "name": "Monserrat Chuckwalla",
+    "binomialName": "Sauromalus slevini"
+  },
+  {
+    "id": "35",
+    "name": "San Esteban Chuckwalla",
+    "binomialName": "Sauromalus varius",
+    "alternateNames": [
+      "Piebald Chuckwalla",
+      "Pinto Chuckwalla"
+    ]
+  },
+  {
+    "id": "36",
+    "name": "Santa Catalina Chuckwalla",
+    "binomialName": "Sauromalus klauberi",
+    "alternateNames": [
+      "Spotted Chuckwalla"
     ]
   }
 ]
