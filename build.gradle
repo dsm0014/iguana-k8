@@ -30,6 +30,12 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
+task getProjectVersion {
+	doLast {
+		println project.version
+	}
+}
+
 test {
 	useJUnitPlatform()
 }
