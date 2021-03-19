@@ -30,9 +30,9 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
-task projectDockerImage {
+task getProjectVersion {
 	doLast {
-		println "gigabyteme/iguana-service:${project.version}"
+		println project.version
 	}
 }
 

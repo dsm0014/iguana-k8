@@ -21,9 +21,13 @@ jobs:
     - name: Execute Unit Tests
       run: ./gradlew build
 
+    - name: Store Application Version
+      run: echo '::set-output name=APP_VERSION::$(./gradlew getProjectVersion)'
+      id: gradle-project
+
     - name: Build and Push Docker Image
       if: github.ref == 'refs/heads/main'
       run: |
       docker login -u ${{ secrets.DOCKER_HUB_USER }} -p ${{ secrets.DOCKER_HUB_TOKEN }}
-      docker build . -t $(./gradlew projectDockerImage)
-      docker push $(./gradlew projectDockerImage)
+      docker build . -t gigabyteme/iguana-service:${{ steps.gradle-project.output.APP_VERSION}}
+      docker push gigabyteme/iguana-service:${{ steps.gradle-project.output.APP_VERSION}}
