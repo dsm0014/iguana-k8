@@ -1,6 +1,12 @@
 name: Iguana CI
 
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
 
 jobs:
   build-pipeline:
@@ -18,7 +24,7 @@ jobs:
     - name: Grant Execute Permission for gradlew
       run: chmod +x gradlew
 
-    - name: Execute Unit Tests
+    - name: Build and Execute Unit Tests
       run: ./gradlew build
 
     - name: Store Application Version
