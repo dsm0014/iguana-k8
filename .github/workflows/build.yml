@@ -22,7 +22,9 @@ jobs:
       run: ./gradlew build
 
     - name: Store Application Version
-      run: echo 'APP_VERSION=$(./gradlew getProjectVersion)' >> $GITHUB_ENV
+      run: echo 'APP_VERSION<<EOF' >> $GITHUB_ENV
+        ./gradlew getProjectVersion >> $GITHUB_ENV
+        echo 'EOF' >> $GITHUB_ENV
 
     - name: Login to Docker Hub
       uses: docker/login-action@v1
