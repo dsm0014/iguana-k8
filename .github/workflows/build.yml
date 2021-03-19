@@ -42,7 +42,7 @@ jobs:
         context: ./
         file: ./Dockerfile
         push: true
-        tags: gigabyteme/iguana-service:${{ steps.gradle_project.output.APP_VERSION }}
+        tags: gigabyteme/iguana-service:${{ steps.gradle_project.outputs.APP_VERSION }}
 
     - name: Image digest
       run: echo ${{ steps.docker_build.outputs.digest }}
