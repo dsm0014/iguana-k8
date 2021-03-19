@@ -3,7 +3,7 @@ name: Iguana CI
 on: [push, pull_request]
 
 jobs:
-  Build Pipeline:
+  build-pipeline:
 
     runs-on: ubuntu-latest
 
