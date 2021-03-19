@@ -1,7 +1,7 @@
-package com.dsm.iguana.api.service;
+package com.dsm.iguana.service;
 
-import com.dsm.iguana.api.model.Iguana;
-import com.dsm.iguana.api.repo.IguanaRepository;
+import com.dsm.iguana.model.Iguana;
+import com.dsm.iguana.repo.IguanaRepository;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;

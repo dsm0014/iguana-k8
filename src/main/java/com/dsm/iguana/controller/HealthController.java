@@ -1,4 +1,4 @@
-package com.dsm.iguana.api.controller;
+package com.dsm.iguana.controller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

@@ -1,4 +1,4 @@
-package com.dsm.iguana.api.config;
+package com.dsm.iguana.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

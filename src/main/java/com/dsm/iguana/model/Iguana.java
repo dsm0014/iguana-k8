@@ -1,4 +1,4 @@
-package com.dsm.iguana.api.model;
+package com.dsm.iguana.model;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
