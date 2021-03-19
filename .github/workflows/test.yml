@@ -1,9 +1,17 @@
-name: Iguana CI
+name: Iguana Unit Tests
 
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - '**'
+      - '!master'
+  pull_request:
+    branches:
+      - '**'
+      - '!master'
 
 jobs:
-  test-pipeline:
+  iguana-unit-test:
 
     runs-on: ubuntu-latest
 

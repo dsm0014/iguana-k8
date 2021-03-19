@@ -9,7 +9,7 @@ on:
       - master
 
 jobs:
-  build-pipeline:
+  iguana-build:
 
     runs-on: ubuntu-latest
 
@@ -24,7 +24,7 @@ jobs:
     - name: Grant Execute Permission for gradlew
       run: chmod +x gradlew
 
-    - name: Build and Execute Unit Tests
+    - name: Build Gradle Application
       run: ./gradlew build
 
     - name: Store Application Version
