@@ -41,4 +41,8 @@ public class IguanaService {
         }
         return false;
     }
+
+    public List<Iguana> findAll() {
+        return repo.findAll();
+    }
 }

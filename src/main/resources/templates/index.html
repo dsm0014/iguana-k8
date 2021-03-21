@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link href="css/styles.css" rel="stylesheet"/>
+        <title>Iguanas Anywhere</title>
+    </head>
+<body>
+    <div class="container">
+        <h1 class="title">Iguanas Anywhere</h1>
+        <table>
+            <tr th:each="iguana: ${iguanas}">
+                <td class="iguana"><a href="!#" th:text="${iguana.name}"></a></td>
+                <td class="iguana" th:text="${iguana.binomialName}"></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
