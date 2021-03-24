@@ -1,4 +1,4 @@
-package com.dsm.iguana.api.model;
+package com.dsm.iguana.model;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -11,6 +11,7 @@ public class Iguana {
     private String id;
     private String name;
     private String binomialName;
+    private String wikiLink;
 
     private String[] alternateNames;
 
@@ -38,6 +39,14 @@ public class Iguana {
 
     public void setBinomialName(String binomialName) {
         this.binomialName = binomialName;
+    }
+
+    public String getWikiLink() {
+        return wikiLink;
+    }
+
+    public void setWikiLink(String wikiLink) {
+        this.wikiLink = wikiLink;
     }
 
     public String[] getAlternateNames() {

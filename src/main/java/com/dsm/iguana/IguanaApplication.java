@@ -1,6 +1,6 @@
-package com.dsm.iguana.api;
+package com.dsm.iguana;
 
-import com.dsm.iguana.api.service.IguanaService;
+import com.dsm.iguana.service.IguanaService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 
