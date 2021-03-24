@@ -4,7 +4,7 @@ spring:
   docker:
     repository: gigabyteme
     image: iguana-service
-    tag: 0.1.0-SNAPSHOT
+    tag: 0.2.0-SNAPSHOT
 
 mongo:
   dbname: iguana-anywhere
