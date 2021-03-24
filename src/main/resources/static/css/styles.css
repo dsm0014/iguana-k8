@@ -1,33 +1,157 @@
-//TODO: LEARN FLEXBOX
-
-
+/* Common among views */
 body {
     margin: 0px;
+
+    background-color: #65CCB8;
     box-sizing: border-box;
 }
-
 .container {
     display: flex;
     flex-direction: column;
 
-    margin-left: 5%;
-    margin-right: 5%;
 
     align-items: center;
-    justify-content: evenly;
+    justify-content: center;
+}
+
+h1 > a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.iguana:hover {
+    background-color: #3B945E;
+}
+
+
+/* Mobile View */
+h1 {
+    font-size: 10vw;
+}
+
+label {
+    font-size: 3.5vw;
+    font-color: grey;
+    margin-top: -2vw;
+}
+
+form {
+    display: flex;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    align-items: center;
+    justify-content: center;
+}
+
+#userInput {
+    width: 80%;
 }
 
 table {
-    width: 50%;
-    border: 2px solid green;
+    width: 90%;
+
+    border: 0.25vw solid green;
+    border-collapse: separate;
+    border-spacing: 0px;
+    border-radius: 2vw;
+    /** #57BA98 **/
+    background-color: #3bd09d;
+
+    margin-bottom: 5%;
 }
 
-h1 {
+thead {
+    padding: 0.25vw;
     font-size: 5vw;
+
+    background-color: #3B945E;
+}
+
+thead > tr > th:first-child {
+    border-top-left-radius: 1.75vw;
+}
+
+thead > tr > th:last-child {
+    border-top-right-radius: 1.75vw;
 }
 
 .iguana {
-    padding: 5px;
-    font-size: 1vw;
-    border-bottom: 0.25vw dashed green;
+    font-size: 4vw;
+}
+
+td {
+    padding: 2vw;
+}
+
+/* Desktop view */
+@media only screen and (min-width: 768px) {
+    h1 {
+        font-size: 5vw;
+    }
+
+    label {
+        font-size: 1.4vw;
+        font-color: grey;
+        margin-top: -2vw;
+    }
+
+    form {
+        width: 60%;
+        display: flex;
+
+        margin-top: 0.8vw;
+        margin-bottom: 0.8vw;
+
+        align-items: center;
+        justify-content: center;
+    }
+
+    input {
+        font-size: 1.8vw;
+    }
+
+    #userInput {
+        width: 80%;
+    }
+
+    table {
+        width: 75%;
+
+        border: 0.25vw solid green;
+        border-collapse: separate;
+        border-spacing: 0px;
+        border-radius: 2vw;
+
+        background-color: #3bd09d;
+
+    }
+
+    thead {
+        padding: 0.25vw;
+        font-size: 2.2vw;
+
+        background-color: #3B945E;
+    }
+
+    thead > tr > th:first-child {
+        border-top-left-radius: 1.75vw;
+    }
+
+    thead > tr > th:last-child {
+        border-top-right-radius: 1.75vw;
+    }
+
+    .iguana {
+        font-size: 1.8vw;
+    }
+
+    .iguana:hover {
+        background-color: #3B945E;
+    }
+
+    td {
+        padding: 0.5vw;
+        content-align: center;
+    }
+
 }
