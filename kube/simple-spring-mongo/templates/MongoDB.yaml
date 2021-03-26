@@ -1,16 +1,4 @@
 apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: mongo-{{ .Release.Name }}-pvc
-spec:
-  accessModes:
-    - ReadWriteOnce
-  resources:
-    requests:
-      storage: 256Mi
-
----
-apiVersion: v1
 kind: Service
 metadata:
   name: mongo-{{ .Release.Name }}
