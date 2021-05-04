@@ -4,7 +4,7 @@ locals {
     spring_replicas = 1,
     spring_docker_repo = "gigabyteme",
     spring_docker_image = "iguana-service",
-    spring_docker_tag = "0.2.0-SNAPSHOT",
+    spring_docker_tag = "1.0.0-SNAPSHOT",
     mongo_dbname = "iguanas-anywhere",
     mongo_replicas = 1,
     mongo_port = 27017,
