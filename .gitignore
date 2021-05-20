@@ -6,7 +6,7 @@ build/
 !**/src/test/**/build/
 
 tf/.terraform
-tfShortcut.sh
+tf/tfShortcut.sh
 
 ### STS ###
 .apt_generated
