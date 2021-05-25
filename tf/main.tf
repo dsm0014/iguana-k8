@@ -3,8 +3,8 @@ terraform {
   backend "s3" {
     endpoint = "nyc3.digitaloceanspaces.com"
     region = "us-east-1" # Not actually used because state is in DO spaces, but required to pass tf init
-    key = "terraform.tfstate"
-    bucket = "iguana-k8"
+    key = "iguana-k8.tfstate"
+    bucket = "dsm-space"
 
     # Skip these checks, we aren't using AWS
     skip_requesting_account_id = true
@@ -20,6 +20,10 @@ terraform {
     helm = {
       source = "hashicorp/helm"
       version = ">= 2.0.3"
+    }
+    kubernetes = {
+      source = "hashicorp/kubernetes"
+      version = ">= 2.2.0"
     }
   }
 }

@@ -14,10 +14,10 @@ provider "helm" {
 
 
 resource "helm_release" "app_release" {
-  name = "${var.project_name}-release"
+  name = "${var.project_name}-app"
   repository = "https://dsm0014.github.io/${var.helm_chart}/"
   chart = var.helm_chart
-  version = "1.0.0"
+  version = "1.1.0"
   create_namespace = true
   namespace = var.project_name
 

@@ -12,7 +12,7 @@ locals {
     mongo_docker_tag = "latest"
   }
   helm_chart_values = templatefile(
-  "${path.module}/values.yaml.tpl",
+  "${path.module}/simple-mongo-spring.yaml.tpl",
   local.template_vars
   )
 }
