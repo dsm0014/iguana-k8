@@ -1,5 +1,5 @@
 #!/bin/bash
-docker_tag=$1
+docker_tag="gigabyteme/iguana-service:$(./gradlew getProjectVersion -q)"
 
 ./gradlew clean build
 docker build . -t $docker_tag

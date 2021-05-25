@@ -13,10 +13,6 @@ minikube start
 kubectl create namespace iguana
 ``` 
 
-Next, pull in the helm chart you'll use to deploy the application:
-
-``helm repo add myhelmchart https://dsm0014.github.io/simple-mongo-spring/``
-
 ## Running iguana-k8 Locally
 With your minikube cluster up and running, execute the included ``localdeploy.sh`` script and provide the namespace created 
 during setup as a parameter.
@@ -26,7 +22,7 @@ For Example:
 sh localdeploy.sh iguana
 ```
 
-The application will be deployed using the ``dsm0014/simple-mongo-spring`` Helm chart, and the console should output a tunnel 
+The application will be deployed using the [simple-mongo-spring](https://github.com/dsm0014/simple-mongo-spring) Helm chart, and the console should output a tunnel 
 to localhost through which the Spring Boot application can be reached.
 
 ## Deploy on DigitalOcean
