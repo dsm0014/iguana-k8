@@ -27,3 +27,11 @@ terraform {
     }
   }
 }
+
+provider "digitalocean" {
+  token = var.DO_TOKEN
+}
+
+data "digitalocean_kubernetes_cluster" "dsm-k8-cluster" {
+  name = "dsm-k8-cluster"
+}
