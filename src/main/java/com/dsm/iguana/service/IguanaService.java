@@ -61,10 +61,10 @@ public class IguanaService {
             return this.findAll();
         }
         String iguana = iguanaInput.toLowerCase().trim();
-        return data.stream()
+        return data.stream().parallel()
                 .filter(ig -> ig.getName().toLowerCase().contains(iguana)
                            || ig.getBinomialName().toLowerCase().contains(iguana)
-                           || Arrays.stream(ig.getAlternateNames())
+                           || Arrays.stream(ig.getAlternateNames()).parallel()
                                 .anyMatch(altName -> altName.toLowerCase().contains(iguana)))
                 .collect(Collectors.toList());
     }
