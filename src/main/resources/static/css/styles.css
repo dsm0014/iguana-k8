@@ -1,8 +1,17 @@
 /* Common among views */
+html {
+    height: 100%;
+}
+
 body {
     margin: 0px;
+    height: 100%;
 
-    background-color: #65CCB8;
+    background-image: linear-gradient(to bottom right, rgba(0,0,0, 0.4), #65CCB8, green);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
     box-sizing: border-box;
 }
 .container {
@@ -54,8 +63,8 @@ table {
     border-collapse: separate;
     border-spacing: 0px;
     border-radius: 2vw;
-    /** #57BA98 **/
-    background-color: #3bd09d;
+
+    background: rgba(59, 208, 157, 0.4);
 
     margin-bottom: 5%;
 }
@@ -64,7 +73,7 @@ thead {
     padding: 0.25vw;
     font-size: 5vw;
 
-    background-color: #3B945E;
+    background: rgba(59, 148, 94, 0.85);
 }
 
 thead > tr > th:first-child {
@@ -81,6 +90,10 @@ thead > tr > th:last-child {
 
 td {
     padding: 2vw;
+}
+
+.iguana:hover {
+    background-color: #3B945E;
 }
 
 /* Desktop view */
@@ -122,15 +135,12 @@ td {
         border-spacing: 0px;
         border-radius: 2vw;
 
-        background-color: #3bd09d;
-
     }
 
     thead {
         padding: 0.25vw;
         font-size: 2.2vw;
 
-        background-color: #3B945E;
     }
 
     thead > tr > th:first-child {
@@ -145,9 +155,6 @@ td {
         font-size: 1.8vw;
     }
 
-    .iguana:hover {
-        background-color: #3B945E;
-    }
 
     td {
         padding: 0.5vw;
