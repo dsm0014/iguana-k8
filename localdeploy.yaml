@@ -12,4 +12,5 @@ mongo:
   port: 27017
   docker:
     image: mongo
-    tag: latest
+    # Version 5.0+ will break with older system architectures
+    tag: 4.4.8

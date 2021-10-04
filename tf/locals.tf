@@ -9,7 +9,7 @@ locals {
     mongo_replicas = 1,
     mongo_port = 27017,
     mongo_docker_image = "mongo",
-    mongo_docker_tag = "latest"
+    mongo_docker_tag = "latest"  // Version 5.0+ will break with older system architectures
   }
   helm_chart_values = templatefile(
   "${path.module}/simple-mongo-spring.yaml.tpl",
