@@ -16,6 +16,11 @@ variable "project_name" {
   default = "iguana-k8"
 }
 
+variable "project_namespace" {
+  type = string
+  default = "dsm-k8"
+}
+
 variable "do_region" {
   type = string
   default = "nyc1"
