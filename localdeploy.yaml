@@ -2,8 +2,7 @@ spring:
   healthcheckEndpoint: /api/health
   replicas: 1
   docker:
-    repository: gigabyteme
-    image: iguana-service
+    image: gigabyteme/iguana-service
     tag: 1.0.0-SNAPSHOT
 
 mongo:

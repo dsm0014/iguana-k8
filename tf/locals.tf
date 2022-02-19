@@ -2,8 +2,7 @@ locals {
   template_vars = {
     spring_healthcheck_endpoint = "/api/health",
     spring_replicas = 1,
-    spring_docker_repo = "gigabyteme",
-    spring_docker_image = "iguana-service",
+    spring_docker_image = "gigabyteme/iguana-service",
     spring_docker_tag = "1.0.0-SNAPSHOT",
     mongo_dbname = "iguanas-anywhere",
     mongo_replicas = 1,

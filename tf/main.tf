@@ -52,7 +52,7 @@ resource "helm_release" "app_release" {
   name = "${var.project_name}-app"
   repository = "https://dsm0014.github.io/${var.helm_chart}/"
   chart = var.helm_chart
-  version = "1.2.0"
+  version = "1.2.1"
   create_namespace = true
   namespace = var.project_namespace
 
@@ -73,10 +73,10 @@ provider "kubernetes" {
 resource "kubernetes_ingress" "dsm_k8_ingress" {
   metadata {
     name = "${var.project_name}-lb"
-    namespace = var.project_name
+    namespace = var.project_namespace
     annotations = {
-      "kubernetes.io/ingress.class" = "nginx"
-      "nginx.ingress.kubernetes.io/rewrite-target": "/"
+      "kubernetes.io/ingress.class": "nginx"
+      "nginx.ingress.kubernetes.io/rewrite-target": "/$1"
     }
   }
   spec {
